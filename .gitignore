@@ -37,3 +37,4 @@ auth.json
 .php-cs-fixer.cache
 .node-version
 tough-victor-447919-c4-30e765480236.json
+.vite
