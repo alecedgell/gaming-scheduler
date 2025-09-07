@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
+/*
+ * Commenting for the time being as we only want Discord access
 Route::middleware('guest')->group(function () {
     Volt::route('login', 'auth.login')
         ->name('login');
@@ -18,6 +20,7 @@ Route::middleware('guest')->group(function () {
         ->name('password.reset');
 
 });
+*/
 
 Route::middleware('auth')->group(function () {
     Volt::route('verify-email', 'auth.verify-email')
