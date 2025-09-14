@@ -2,9 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Actions\AddGameToLibrary;
-use App\Actions\AddsGamesToLibrary;
-use App\Actions\CreatesGame;
+use App\Actions\AddsGameToLibrary;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
@@ -22,7 +20,7 @@ class GameLibrary extends Component
         $this->games = auth()->user()->games;
     }
 
-    public function addGameToLibrary(AddsGamesToLibrary $addGameToLibrary): void
+    public function addGameToLibrary(AddsGameToLibrary $addGameToLibrary): void
     {
         $this->validate();
 

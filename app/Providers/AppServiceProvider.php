@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Actions\AddsGamesToLibrary;
+use App\Actions\AddsGameToLibrary;
 use App\Actions\AddGameToLibrary;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(AddsGamesToLibrary::class, AddGameToLibrary::class);
+        $this->app->bind(AddsGameToLibrary::class, AddGameToLibrary::class);
     }
 
     /**

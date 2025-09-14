@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit="createGame">
+    <form wire:submit="addGameToLibrary">
         <label for="game_name">
             <input wire:model="gameName" class="bg-zinc-500 text-white" id="game_name" type="text" required
                 name="game_name" />

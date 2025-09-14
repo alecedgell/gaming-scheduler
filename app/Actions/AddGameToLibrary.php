@@ -5,7 +5,7 @@ namespace App\Actions;
 use App\Models\Game;
 use App\Models\User;
 
-class AddGameToLibrary implements CreatesGame
+class AddGameToLibrary implements AddsGameToLibrary
 {
     public function __invoke(string $gameName, User $gameOwner): Game
     {
