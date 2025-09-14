@@ -1,7 +1,7 @@
 <div>
     <form wire:submit="createGame">
         <label for="game_name">
-            <input wire:model="gameName" class="bg-gray-500 text-white" id="game_name" type="text" required
+            <input wire:model="gameName" class="bg-zinc-500 text-white" id="game_name" type="text" required
                 name="game_name" />
         </label>
         <div>

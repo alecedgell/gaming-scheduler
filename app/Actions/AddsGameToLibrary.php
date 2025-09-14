@@ -5,7 +5,7 @@ namespace App\Actions;
 use App\Models\Game;
 use App\Models\User;
 
-interface CreatesGame
+interface AddsGamesToLibrary
 {
     public function __invoke(string $gameName, ?User $gameOwner = null): Game;
 }
